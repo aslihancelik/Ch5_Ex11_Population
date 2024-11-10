@@ -7,15 +7,14 @@
 using namespace std;
 
 int calculatePopulation(int startSize, int increase) {
-    int newPopulation;
-    newPopulation = startSize + (startSize * increase / 100);
-    return newPopulation;
+  
+    return startSize + (startSize * increase / 100);
 }
 
 int main()
 {
     int startingSize;
-    int increasePercentage; //??????????
+    int increasePercentage; 
     int daysToMultiply;
 
     do {
@@ -48,9 +47,9 @@ int main()
 
     int newPopulation = startingSize;
     cout << "The population size on day 1, which is the starting size is: " << startingSize << endl;
-    for (int i = 0; i < daysToMultiply; i++) {
+    for (int i = 1; i <= daysToMultiply; ++i) {
         newPopulation = calculatePopulation(newPopulation, increasePercentage);
-        cout << "The population size on day " << i + 2 << " is: " << newPopulation << endl;
+        cout << "The population size on day " << i + 1 << " is: " << newPopulation << endl;
     }
      
 
