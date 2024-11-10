@@ -67,7 +67,7 @@ int main()
         cout << "The population size on day " << i + 1 << " is: " << newPopulation << endl;
     }
      
-
+    return 0;
 
 }
 
